@@ -1,6 +1,8 @@
 # find the sum of the even numbers of the fibonacci sequence
 # that do not exceed 4e6
 
+import sys
+n = int(sys.argv[1])
 
 def gen_fib(n):
     fib = [1, 1]
@@ -10,19 +12,13 @@ def gen_fib(n):
         fib.append(next_num)
     return fib
 
+arr = gen_fib(n)
 
-def sum_of_even(arr):
-    total = 0
-    for number in arr:
-        if number % 2 == 0:
-            total += number
-    return total
+total = 0
+for number in arr:
+    if number % 2 == 0:
+        total += number
 
-
-def main():
-    print(sum_of_even(gen_fib(4000000)))
-
-
-main()
+print(total)
 
 # CORRECT

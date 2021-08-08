@@ -12,10 +12,8 @@ def special_pythagorean_triplet():
         c += 1
     return product
 
-
 def main():
     print(special_pythagorean_triplet())
-
 
 main()
 

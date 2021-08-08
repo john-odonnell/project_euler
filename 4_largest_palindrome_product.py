@@ -1,14 +1,12 @@
 # find the largest palindrome made from the product of
 # two three digit numbers
 
-
 def int_to_rev_array(n):
     rev_array = []
     while n > 0:
         rev_array.append(n % 10)
         n = int(n / 10)
     return rev_array
-
 
 def reverse_list(array):
     rev_array = []
@@ -17,7 +15,6 @@ def reverse_list(array):
         rev_array.append(array[i])
         i -= 1
     return rev_array
-
 
 def find_palindrome_product(n):
     highest_palindrome_product = 0
@@ -30,10 +27,8 @@ def find_palindrome_product(n):
                 highest_palindrome_product = product
     return highest_palindrome_product
 
-
 def main():
     print(find_palindrome_product(3))
-
 
 main()
 
