@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+go build \
+  -ldflags="-s -w" \
+  -o bin/project_euler \
+  ./cmd/project_euler/project_euler.go
